@@ -1,11 +1,9 @@
-import pico2d
+from pico2d import open_canvas, delay, close_canvas
 import game_framework
-import logo_mode
-import play_mode
 
-pico2d.open_canvas()
+import play_mode as start_mode
 
-#game_framework.run(logo_mode)
-game_framework.run(play_mode)
+open_canvas(1600, 600)
+game_framework.run(start_mode)
+close_canvas()
 
-pico2d.close_canvas()
